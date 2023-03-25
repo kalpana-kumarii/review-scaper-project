@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock %}
+
+{% block body %}
+  <div class="container">
+    <div class="row1"><h1>Search product to see review </h1></div>
+    <div class="row2">
+        <form>
+            <select>
+                <option value="flipkart">Flipkart</option>
+                <option value="amazon">Amazon</option>
+            </select>
+            <input type="text" placeholder="Search product....."/>
+            <input type="submit" value="Submit" name="submit" />
+          
+        </form>
+    </div>
+  </div>
+  {% endblock %}
